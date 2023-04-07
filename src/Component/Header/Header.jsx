@@ -7,7 +7,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-       <header className='bg-black text-white text-xl'>
+       <header className='bg-gray-950 text-white text-xl'>
 
              <nav className='container mx-auto md:flex justify-between p-2 '>
 
@@ -22,7 +22,7 @@ const Header = () => {
                         </span>
                     </div>
 
-                    <h2 className='text-3xl '>ApI Universe</h2>
+                    <h2 className='text-3xl text-violet-400 font-serif font-semibold'>ApI Universe</h2>
 
                 </div>
 
