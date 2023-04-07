@@ -18,7 +18,7 @@ const Header = () => {
                             <i className="fa-solid fa-bars-staggered"></i>
                         </span>
                         <span className={`${!open ? "block" : "hidden"} `}>
-                            <i class="fa-solid fa-xmark"></i>
+                            <i className="fa-solid fa-xmark"></i>
                         </span>
                     </div>
 

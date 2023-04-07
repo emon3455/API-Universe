@@ -14,6 +14,7 @@ import MealDV from './Component/MealDB/MealDV';
 import SporstDB from './Component/SportsDB/SporstDB';
 import Contact from './Component/Contact/Contact';
 import Error from './Component/Error/Error';
+import SingleCountry from './Component/RestCountrys/SingleCountry';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/restCountry",
-        element: <RestCountrys/>
+        element: <RestCountrys/>,
+        loader: ()=> fetch("https://restcountries.com/v3.1/all")
+      },
+      {
+        path: "/country/:name",
+        element: <SingleCountry></SingleCountry>,
+        loader: ({params})=> fetch(`https://restcountries.com/v3.1/name/${params.name}`)
       },
       {
         path: "/mealDb",
