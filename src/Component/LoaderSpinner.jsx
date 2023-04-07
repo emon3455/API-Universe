@@ -5,7 +5,7 @@ const LoaderSpinner = () => {
 
     return (
         <div className='flex justify-center items-center h-screen'>
-            <progress className="progress w-72"></progress>
+           <progress className="progress w-72"></progress>
         </div>
     );
 };
