@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
 
@@ -26,12 +27,12 @@ const Header = () => {
                 </div>
 
                 <div className={`md:w-2/3 flex md:flex-row justify-around flex-col ${!open ? "block" :"hidden"}`}>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/restCountry">Rest Countrys</Link>
-                    <Link to="mealDb">Meal DB</Link>
-                    <Link to="sportsDb">Sports DB</Link>
-                    <Link to="contact">Contact</Link>
+                    <ActiveLink to="/">Home</ActiveLink>
+                    <ActiveLink to="/about">About</ActiveLink>
+                    <ActiveLink to="/restCountry">Rest Countrys</ActiveLink>
+                    <ActiveLink to="mealDb">Meal DB</ActiveLink>
+                    <ActiveLink to="sportsDb">Sports D</ActiveLink>
+                    <ActiveLink to="contact">Contact</ActiveLink>
                 </div>
 
             </nav>
