@@ -6,11 +6,44 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Main from './Component/Layout/Main';
+import Home from './Component/Home/Home';
+import About from './Component/About/About';
+import RestCountrys from './Component/RestCountrys/RestCountrys';
+import MealDV from './Component/MealDB/MealDV';
+import SporstDB from './Component/SportsDB/SporstDB';
+import Contact from './Component/Contact/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Main></Main>,
+    children:[
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/restCountry",
+        element: <RestCountrys/>
+      },
+      {
+        path: "/mealDb",
+        element: <MealDV></MealDV>
+      },
+      {
+        path: "/sportsDb",
+        element: <SporstDB></SporstDB>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      }
+    ]
   },
 ]);
 
